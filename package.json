@@ -1,13 +1,14 @@
 {
   "name": "impromptu-react-sidemenu",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A side menu component for React.",
   "main": "modules/impromptu-sidemenu.jsx.js",
   "dependencies": {
-    "react": ">=0.12.0",
+    "react": ">=0.12.0"
+  },
+  "devDependencies": {
     "reactify": "^1.1.1"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
