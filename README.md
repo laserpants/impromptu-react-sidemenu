@@ -50,7 +50,7 @@ $menu-divider             : rgb(74, 74, 74);
 
 ## Contribute
 
-Please, do. Like the ancient Greek proverb says; "Pull requests are welcome."
+Please, do! Like the ancient Greek proverb says; "Pull requests are welcome."
 
 ## License
 
