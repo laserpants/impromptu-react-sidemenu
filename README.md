@@ -1,8 +1,10 @@
 # Impromptu React Side Menu
 
-A (sliding) side menu component for React. 
+A side menu component for React. 
 
 ### What does it look like?
+
+[Here](http://johanneshilden.github.io/impromptu-react-sidemenu) is an example. 
 
 ## Installation
 
@@ -117,12 +119,12 @@ $menu-divider             : rgb(74, 74, 74);
 
 ## Contribute
 
-Please, do! Like the ancient Greek proverb says; "Pull requests are welcome."
+Please, do! Like the old pythagorean proverb says; "Pull requests are welcome."
 
 ## License
 
-Code licensed under the BSD License.
+Impromptu React Side Menu is provided under the BSD License.
 
 #### Font Awesome
 
-This project is distributed with Font Awesome. [Font Awesome](http://fontawesome.io/) is created and maintained by Dave Gandy. Fonts licensed under SIL OFL 1.1. Code licensed under the MIT License.
+This project is distributed with the Font Awesome library. [Font Awesome](http://fontawesome.io/) is created and maintained by Dave Gandy. Fonts licensed under SIL OFL 1.1. Code licensed under MIT License.
