@@ -10,6 +10,8 @@ npm install impromptu-react-sidemenu
 
 ## How to use
 
+### HTML
+
 ## Props
 
 ## CSS
