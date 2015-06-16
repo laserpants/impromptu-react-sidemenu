@@ -58,4 +58,4 @@ Code licensed under the BSD License.
 
 #### Font Awesome
 
-[Font Awesome](http://fontawesome.io/) is created and maintained by Dave Gandy. Fonts licensed under SIL OFL 1.1. Code licensed under MIT License.
+This project is distributed with Font Awesome. [Font Awesome](http://fontawesome.io/) is created and maintained by Dave Gandy. Fonts licensed under SIL OFL 1.1. Code licensed under the MIT License.
