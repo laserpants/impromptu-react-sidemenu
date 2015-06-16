@@ -4,7 +4,9 @@ A side menu component for React.
 
 ### What does it look like?
 
-## Installation
+http://johanneshilden.github.io/impromptu-react-sidemenu
+
+## Installation
 
 Npm is the recommended install method.
 
