@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>React Bootstrap Impromptu Side Menu</title>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link href="css/impromptu.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/jumbotron-narrow.css" rel="stylesheet">
+    <style type="text/css">
+        body { font-family: "Lato", sans-serif; }
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+    <div id="left"></div>
+    <div id="right"></div>
+
+    <div class="container">
+
+        <div class="header clearfix text-center">
+            <h2>&lt;Impromptu React Side Menu&gt;</h2>
+        </div>
+
+        <a name="installation"></a>
+        <h3>Installation</h3>
+
+        <a name="how-to-use"></a>
+        <h3>How to use</h3>
+
+        <pre>
+var React = require('react');
+var Menu  = require('impromptu-react-sidemenu').Menu;
+var Brand = require('impromptu-react-sidemenu').Brand;
+var Item  = require('impromptu-react-sidemenu').Item;
+
+var MenuComponent = React.createClass({
+    handleClick: function(item) {
+        switch (item) {
+            case 0:
+                // ...
+                break;
+            case 1:
+            ...
+        }
+    },
+    render: function() {
+        return (
+            &lt;Menu&gt;
+                &lt;Brand onClick={this.handleClick.bind(null, 0)}&gt;
+                    My menu is grandiose
+                &lt;/Brand&gt;
+                &lt;Item onClick={this.handleClick.bind(null, 1)}&gt;
+                    Item #1
+                &lt;/Item&gt;
+                &lt;Item onClick={this.handleClick.bind(null, 2)}&gt;
+                    Item #2
+                &lt;/Item&gt;
+                &lt;Item onClick={this.handleClick.bind(null, 3)}&gt;
+                    Item #3
+                &lt;/Item&gt;
+            &lt;/Menu&gt;
+        );
+    }
+});
+
+React.render(
+    &lt;MenuComponent /&gt;,
+    document.getElementById('anchor')
+);</pre>
+
+        <pre>
+var MenuComponent = React.createClass({
+    render: function() {
+        return (
+            &lt;Menu&gt;
+                &lt;Brand&gt;
+                    &lt;a href="#item-1"&gt;My menu is grandiose&lt;/a&gt;
+                &lt;/Brand&gt;
+                &lt;Item&gt;
+                    &lt;a href="#item-1"&gt;Item #1&lt;/a&gt;
+                &lt;/Item&gt;
+                &lt;Item&gt;
+                    &lt;a href="#item-2"&gt;Item #2&lt;/a&gt;
+                &lt;/Item&gt;
+                &lt;Item&gt;
+                    &lt;a href="#item-3"&gt;Item #3&lt;/a&gt;
+                &lt;/Item&gt;
+            &lt;/Menu&gt;
+        );
+    }
+});</pre>
+
+        <a name="props"></a>
+        <h3>Props</h3>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Property</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                    <th>Default</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <code>width</code>
+                    </td>
+                    <td>
+                        Integer
+                    </td>
+                    <td>
+                        Width of the menu, in pixels. 
+                    </td>
+                    <td>
+                        250
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>autoClose</code>
+                    </td>
+                    <td>
+                        Boolean
+                    </td>
+                    <td>
+                        Controls whether the menu should automatically close when a menu item is clicked.
+                    </td>
+                    <td>
+                        false
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>position</code>
+                    </td>
+                    <td>
+                        'left'&nbsp;|&nbsp;'right'
+                    </td>
+                    <td>
+                        Position of the menu.
+                    </td>
+                    <td>
+                        'right'
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>showDividers</code>
+                    </td>
+                    <td>
+                        Boolean
+                    </td>
+                    <td>
+                        This property enables a visible line between menu items.
+                    </td>
+                    <td>
+                        false
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <a name="css"></a>
+        <h3>CSS</h3>
+
+        <h4>Sass customization</h4>
+
+        <pre>
+/* Open button styles */
+$button-open-bg           : rgba(0, 0, 0, 0.4);
+$button-open-bg-active    : rgba(0, 0, 0, 0.7);
+$button-open-fg           : rgb(255, 255, 255);
+
+/* Close button styles */
+$button-close-bg          : rgb(255, 255, 255);
+$button-close-bg-active   : rgba(255, 255, 255, 0.7);
+$button-close-fg          : rgb(51, 51, 51);
+
+/* Menu styles */
+$menu-background          : rgb(51, 51, 51);
+$menu-text-base           : rgb(153, 153, 153);
+$menu-text-active         : rgb(255, 255, 255);
+$menu-selected-bg         : rgba(255, 255, 255, 0.2);
+$menu-divider             : rgb(74, 74, 74);</pre>
+
+        <a name="contribute"></a>
+        <h3>Contribute</h3>
+
+        <p>
+            Please, do.
+        </p>
+
+        <a name="license"></a>
+        <h3>License</h3>
+
+    </div> 
+
+    <script src="bundle.js"></script>
+</body>
+</html>

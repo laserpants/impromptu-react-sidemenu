@@ -1,0 +1,144 @@
+
+$button-open-bg         : rgba(0,0,0,0.4);
+$button-open-bg-active  : rgba(0,0,0,0.7);
+$button-open-fg         : rgb(255,255,255);
+
+$button-close-bg        : rgb(255,255,255);
+$button-close-bg-active : rgba(255,255,255,0.7);
+$button-close-fg        : rgb(51,51,51);
+
+$menu-background        : rgb(51,51,51);
+$menu-text-base         : rgb(153,153,153);
+$menu-text-active       : rgb(255,255,255);
+$menu-selected-bg       : rgba(255,255,255,0.2);
+$menu-divider           : rgb(74,74,74);
+
+/* Button styles */
+
+.button-open,
+.button-close {
+    font-size: 18px;
+    padding: 10px 16px;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.button-open:active,
+.button-close:active {
+    box-shadow: none;
+}
+
+.button-open {
+    border-radius: 0;
+    color: $button-open-fg;
+    background-color: $button-open-bg; 
+}
+
+.button-open:hover,
+.button-open:focus,
+.button-open:active {
+    color: $button-open-fg;
+    background-color: $button-open-bg-active; 
+}
+
+.button-close {
+    border-radius: 0;
+    color: $button-close-fg;
+    background-color: $button-close-bg;
+}
+
+.button-close:hover,
+.button-close:focus,
+.button-close:active {
+    color: $button-close-fg;
+    background-color: $button-close-bg-active; 
+}
+
+/* Menu styles */
+ 
+.impromptu-toggle-open {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    margin: 5px 5px;
+}
+
+.impromptu-menu-wrapper {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    overflow-y: auto;
+    background: $menu-background;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.impromptu-menu-wrapper.impromptu-active {
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.impromptu-menu-wrapper {
+
+    .toggle {
+        margin: 5px 5px 0 0;
+    }
+
+    .sidebar-nav {
+        position: absolute;
+        top: 0;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .sidebar-nav li {
+        text-indent: 20px;
+        line-height: 40px;
+        cursor: pointer;
+    }
+
+    .sidebar-nav li * {
+        display: block;
+        text-decoration: none;
+        color: $menu-text-base;
+    }
+
+    .sidebar-nav li *:hover {
+        text-decoration: none;
+        color: $menu-text-active;
+        background: $menu-selected-bg;
+    }
+
+    .sidebar-nav li a:active,
+    .sidebar-nav li a:focus {
+        text-decoration: none;
+    }
+
+    .sidebar-nav > .sidebar-brand {
+        height: 54px;
+        font-size: 1.2em;
+        line-height: 54px;
+    }
+
+    .sidebar-nav > .sidebar-brand span {
+        color: $menu-text-base;
+    }
+    
+    .sidebar-nav > .sidebar-brand span:hover {
+        color: $menu-text-active;
+        background: none;
+    }
+
+    .impromptu-divider.sidebar-nav li {
+        border-bottom: 1px solid $menu-divider;
+    }
+
+}

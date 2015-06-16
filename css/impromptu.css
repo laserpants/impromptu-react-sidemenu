@@ -1,0 +1,97 @@
+/* Button styles */
+.button-open,
+.button-close {
+  font-size: 18px;
+  padding: 10px 16px;
+  line-height: 24px;
+  cursor: pointer; }
+
+.button-open:active,
+.button-close:active {
+  box-shadow: none; }
+
+.button-open {
+  border-radius: 0;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4); }
+
+.button-open:hover,
+.button-open:focus,
+.button-open:active {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7); }
+
+.button-close {
+  border-radius: 0;
+  color: #333333;
+  background-color: white; }
+
+.button-close:hover,
+.button-close:focus,
+.button-close:active {
+  color: #333333;
+  background-color: rgba(255, 255, 255, 0.7); }
+
+/* Menu styles */
+.impromptu-toggle-open {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  margin: 5px 5px; }
+
+.impromptu-menu-wrapper {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  overflow-y: auto;
+  background: #333333;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s; }
+
+.impromptu-menu-wrapper.impromptu-active {
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s; }
+
+.impromptu-menu-wrapper .toggle {
+  margin: 5px 5px 0 0; }
+.impromptu-menu-wrapper .sidebar-nav {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+.impromptu-menu-wrapper .sidebar-nav li {
+  text-indent: 20px;
+  line-height: 40px;
+  cursor: pointer; }
+.impromptu-menu-wrapper .sidebar-nav li * {
+  display: block;
+  text-decoration: none;
+  color: #999999; }
+.impromptu-menu-wrapper .sidebar-nav li *:hover {
+  text-decoration: none;
+  color: white;
+  background: rgba(255, 255, 255, 0.2); }
+.impromptu-menu-wrapper .sidebar-nav li a:active,
+.impromptu-menu-wrapper .sidebar-nav li a:focus {
+  text-decoration: none; }
+.impromptu-menu-wrapper .sidebar-nav > .sidebar-brand {
+  height: 54px;
+  font-size: 1.2em;
+  line-height: 54px; }
+.impromptu-menu-wrapper .sidebar-nav > .sidebar-brand span {
+  color: #999999; }
+.impromptu-menu-wrapper .sidebar-nav > .sidebar-brand span:hover {
+  color: white;
+  background: none; }
+.impromptu-menu-wrapper .impromptu-divider.sidebar-nav li {
+  border-bottom: 1px solid #4a4a4a; }
+
+/*# sourceMappingURL=impromptu.css.map */
