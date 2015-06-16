@@ -11,6 +11,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "browserify": {
+    "transform": ["reactify"]
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/johanneshilden/impromptu-react-sidemenu.git"
@@ -20,7 +23,7 @@
     "react-component",
     "menu"
   ],
-  "author": "Johannes Hilden",
+  "author": "Johannes Hilden <hildenjohannes@gmail.com>",
   "license": "BSD",
   "bugs": {
     "url": "https://github.com/johanneshilden/impromptu-react-sidemenu/issues"
