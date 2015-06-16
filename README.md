@@ -1,6 +1,6 @@
 # Impromptu React Side Menu
 
-A (sliding) side menu component for React. 
+A side menu component for React. 
 
 ### What does it look like?
 
