@@ -18,14 +18,10 @@ npm install impromptu-react-sidemenu
 
 ## Props
 
-+-------------+----------+-----------------+-------------+
-| Property    | Type     | Description     | Default     |
-+-------------+----------+-----------------+-------------+
-| `width`     |          |                 |             |
-| `width`     |          |                 |             |
-| `width`     |          |                 |             |
-| `width`     |          |                 |             |
-+-------------+----------+-----------------+-------------+
+| Property | Type   | Description | Default |
+| ------------- | ----------- | ------------- | ------------ |
+| Help      | Display the help window. | x | x |
+| Close     | Closes a window     | x | x |
 
 ## CSS
 
