@@ -2,7 +2,7 @@
 
 A (sliding) side menu component for React. 
 
-## What does it look like?
+### What does it look like?
 
 ## Installation
 
