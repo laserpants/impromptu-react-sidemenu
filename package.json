@@ -1,6 +1,6 @@
 {
   "name": "impromptu-react-sidemenu",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A side menu component for React.",
   "main": "modules/impromptu-sidemenu.jsx.js",
   "peerDependencies": {
