@@ -121,8 +121,8 @@ Please, do! Like the ancient Greek proverb says; "Pull requests are welcome."
 
 ## License
 
-Code licensed under the BSD License.
+Impromptu React Side Menu is provided under the BSD License.
 
 #### Font Awesome
 
-This project is distributed with Font Awesome. [Font Awesome](http://fontawesome.io/) is created and maintained by Dave Gandy. Fonts licensed under SIL OFL 1.1. Code licensed under the MIT License.
+This project is distributed with the Font Awesome library. [Font Awesome](http://fontawesome.io/) is created and maintained by Dave Gandy. Fonts licensed under SIL OFL 1.1. Code licensed under MIT License.
