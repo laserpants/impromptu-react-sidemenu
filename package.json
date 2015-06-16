@@ -1,0 +1,28 @@
+{
+  "name": "impromptu-react-sidemenu",
+  "version": "0.0.1",
+  "description": "A side menu component for React.",
+  "main": "modules/impromptu-sidemenu.jsx.js",
+  "dependencies": {
+    "react": ">=0.12.0",
+    "reactify": "^1.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johanneshilden/impromptu-react-sidemenu.git"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "menu"
+  ],
+  "author": "Johannes Hilden",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/johanneshilden/impromptu-react-sidemenu/issues"
+  }
+}
