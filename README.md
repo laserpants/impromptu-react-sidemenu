@@ -6,6 +6,8 @@ A (sliding) side menu component for React.
 
 ## Installation
 
+Npm is the recommended install method.
+
 ```
 npm install impromptu-react-sidemenu
 ```
