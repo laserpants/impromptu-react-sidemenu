@@ -10,9 +10,14 @@
     <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link href="css/impromptu.css" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
     <link href="css/jumbotron-narrow.css" rel="stylesheet">
+
     <style type="text/css">
         body { font-family: "Lato", sans-serif; }
+        .ion-social-github {
+            margin: 0 -20px;
+        }
     </style>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -48,7 +53,7 @@ var MenuComponent = React.createClass({
     handleClick: function(item) {
         switch (item) {
             case 0:
-                // ...
+                // ... do stuff
                 break;
             case 1:
             ...
@@ -176,20 +181,21 @@ var MenuComponent = React.createClass({
         <a name="css"></a>
         <h3>CSS</h3>
 
-        <h4>Sass customization</h4>
+        <h4>Customization</h4>
+        <i style="font-size:3em;" class="ion-social-sass"></i>
 
         <pre>
-/* Open button styles */
+/* Open button color values */
 $button-open-bg           : rgba(0, 0, 0, 0.4);
 $button-open-bg-active    : rgba(0, 0, 0, 0.7);
 $button-open-fg           : rgb(255, 255, 255);
 
-/* Close button styles */
+/* Close button color values */
 $button-close-bg          : rgb(255, 255, 255);
 $button-close-bg-active   : rgba(255, 255, 255, 0.7);
 $button-close-fg          : rgb(51, 51, 51);
 
-/* Menu styles */
+/* Menu color values */
 $menu-background          : rgb(51, 51, 51);
 $menu-text-base           : rgb(153, 153, 153);
 $menu-text-active         : rgb(255, 255, 255);
@@ -205,6 +211,11 @@ $menu-divider             : rgb(74, 74, 74);</pre>
 
         <a name="license"></a>
         <h3>License</h3>
+
+        <h3>GitHub</h3>
+        <p>
+            <a href="https://github.com/johanneshilden/impromptu-react-sidemenu">https://github.com/johanneshilden/impromptu-react-sidemenu</a>
+        </p>
 
     </div> 
 

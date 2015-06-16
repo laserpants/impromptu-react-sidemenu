@@ -14,6 +14,7 @@ var LeftMenu = React.createClass({
                 <Item><a href="#css">CSS</a></Item>
                 <Item><a href="#contribute">Contribute</a></Item>
                 <Item><a href="#license">License</a></Item>
+                <Item><a href="#github"><i className="ion-social-github"></i></a></Item>
             </Menu>
         );
     }
@@ -40,7 +41,10 @@ var RightMenu = React.createClass({
             case 6:
                 window.location.hash = 'license';
                 break;
-            default:
+            case 7:
+                window.location.hash = 'github';
+                break;
+             default:
                 window.location.hash = '';
         }
     },
@@ -54,6 +58,7 @@ var RightMenu = React.createClass({
                 <Item onClick={this.handleClick.bind(null, 4)}>CSS</Item>
                 <Item onClick={this.handleClick.bind(null, 5)}>Contribute</Item>
                 <Item onClick={this.handleClick.bind(null, 6)}>License</Item>
+                <Item onClick={this.handleClick.bind(null, 7)}><i className="ion-social-github"></i></Item>
             </Menu>
         );
     }

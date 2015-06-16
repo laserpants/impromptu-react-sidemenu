@@ -14,7 +14,8 @@ var LeftMenu = React.createClass({displayName: "LeftMenu",
                 React.createElement(Item, null, React.createElement("a", {href: "#props"}, "Props")), 
                 React.createElement(Item, null, React.createElement("a", {href: "#css"}, "CSS")), 
                 React.createElement(Item, null, React.createElement("a", {href: "#contribute"}, "Contribute")), 
-                React.createElement(Item, null, React.createElement("a", {href: "#license"}, "License"))
+                React.createElement(Item, null, React.createElement("a", {href: "#license"}, "License")), 
+                React.createElement(Item, null, React.createElement("a", {href: "#github"}, React.createElement("i", {className: "ion-social-github"})))
             )
         );
     }
@@ -41,7 +42,10 @@ var RightMenu = React.createClass({displayName: "RightMenu",
             case 6:
                 window.location.hash = 'license';
                 break;
-            default:
+            case 7:
+                window.location.hash = 'github';
+                break;
+             default:
                 window.location.hash = '';
         }
     },
@@ -54,7 +58,8 @@ var RightMenu = React.createClass({displayName: "RightMenu",
                 React.createElement(Item, {onClick: this.handleClick.bind(null, 3)}, "Props"), 
                 React.createElement(Item, {onClick: this.handleClick.bind(null, 4)}, "CSS"), 
                 React.createElement(Item, {onClick: this.handleClick.bind(null, 5)}, "Contribute"), 
-                React.createElement(Item, {onClick: this.handleClick.bind(null, 6)}, "License")
+                React.createElement(Item, {onClick: this.handleClick.bind(null, 6)}, "License"), 
+                React.createElement(Item, {onClick: this.handleClick.bind(null, 7)}, React.createElement("i", {className: "ion-social-github"}))
             )
         );
     }
