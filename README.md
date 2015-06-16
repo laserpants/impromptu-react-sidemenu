@@ -18,10 +18,12 @@ npm install impromptu-react-sidemenu
 
 ## Props
 
-| Property | Type   | Description | Default |
-| ------------- | ----------- | ------------- | ------------ |
-| Help      | Display the help window. | x | x |
-| Close     | Closes a window     | x | x |
+| Property        | Type                     | Description   | Default      | 
+| --------------- | ------------------------ | ------------- | ------------ |
+| `width`         | Integer                  | Width of the menu, in pixels.  | 250         |
+| `autoClose`     | Boolean                  | Controls whether the menu should automatically close when a menu item is clicked.      | false      |
+| `position`      | 'left' | 'right'         | Position of the menu.     | 'right'            |
+| `showDividers`  | Boolean                  | When true, this setting enables a visible line between menu items.     | false    |
 
 ## CSS
 
