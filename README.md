@@ -14,6 +14,71 @@ npm install impromptu-react-sidemenu
 
 ## How to use
 
+```
+var React = require('react');
+var Menu  = require('impromptu-react-sidemenu').Menu;
+var Brand = require('impromptu-react-sidemenu').Brand;
+var Item  = require('impromptu-react-sidemenu').Item;
+
+var MenuComponent = React.createClass({
+    handleClick: function(item) {
+        switch (item) {
+            case 0:
+                // ... do stuff
+                break;
+            case 1:
+            ...
+        }
+    },
+    render: function() {
+        return (
+            &lt;Menu&gt;
+                &lt;Brand onClick={this.handleClick.bind(null, 0)}&gt;
+                    My menu is grandiose
+                &lt;/Brand&gt;
+                &lt;Item onClick={this.handleClick.bind(null, 1)}&gt;
+                    Item #1
+                &lt;/Item&gt;
+                &lt;Item onClick={this.handleClick.bind(null, 2)}&gt;
+                    Item #2
+                &lt;/Item&gt;
+                &lt;Item onClick={this.handleClick.bind(null, 3)}&gt;
+                    Item #3
+                &lt;/Item&gt;
+            &lt;/Menu&gt;
+        );
+    }
+});
+
+React.render(
+    &lt;MenuComponent /&gt;,
+    document.getElementById('anchor')
+);
+```
+
+```
+var MenuComponent = React.createClass({
+    render: function() {
+        return (
+            &lt;Menu&gt;
+                &lt;Brand&gt;
+                    &lt;a href="#item-1"&gt;My menu is grandiose&lt;/a&gt;
+                &lt;/Brand&gt;
+                &lt;Item&gt;
+                    &lt;a href="#item-1"&gt;Item #1&lt;/a&gt;
+                &lt;/Item&gt;
+                &lt;Item&gt;
+                    &lt;a href="#item-2"&gt;Item #2&lt;/a&gt;
+                &lt;/Item&gt;
+                &lt;Item&gt;
+                    &lt;a href="#item-3"&gt;Item #3&lt;/a&gt;
+                &lt;/Item&gt;
+            &lt;/Menu&gt;
+        );
+    }
+});
+```
+
 ### HTML
 
 ## Props
@@ -25,6 +90,8 @@ npm install impromptu-react-sidemenu
 | `position`      | 'left'&nbsp;&vert;&nbsp;'right'         | Position of the menu.     | 'right'            |
 | `showDividers`  | Boolean                  | When true, this setting enables a visible line between menu items.     | false    |
 
+
+<i style="font-size:3.2em; float:right;" class="ion-social-sass"></i>
 ## CSS
 
 ### Customization
