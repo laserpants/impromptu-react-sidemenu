@@ -16,7 +16,7 @@ After installing, copy the public assets to your project folder.
 
     cp -r node_modules/impromptu-react-sidemenu/public/ .
 
-A mimimal
+A bare minimum HTML host template could look like the one below.
 
 ```
 <!DOCTYPE html>
@@ -28,12 +28,6 @@ A mimimal
     <title>Impromptu React Side Menu</title>
     <link href="//cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
     <link href="public/css/impromptu.css" rel="stylesheet">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
 <body>
     <div class="impromptu-font-sans" id="anchor"></div>
@@ -41,8 +35,6 @@ A mimimal
 </body>
 </html>
 ```
-
-xx
 
 ## How to use
 
@@ -54,13 +46,15 @@ var Item  = require('impromptu-react-sidemenu').Item;
 
 var MenuComponent = React.createClass({
     handleClick: function(item) {
+        /*
         switch (item) {
             case 0:
                 // ... do stuff
-                break;
             case 1:
+                // ... do stuff
             ...
         }
+        */
     },
     render: function() {
         return (
@@ -86,6 +80,10 @@ React.render(
     &lt;MenuComponent /&gt;,
     document.getElementById('anchor')
 );
+```
+
+```
+browserify -t reactify main.js -o bundle.js
 ```
 
 ```
