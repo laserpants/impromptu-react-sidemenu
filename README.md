@@ -14,7 +14,8 @@ Npm is the recommended install method.
 npm install impromptu-react-sidemenu
 ```
 
-After installing, copy the public assets to your project folder to get access to the required stylesheets and fonts.
+After installing, copy the public assets to your project folder to get access to the required stylesheets and fonts. Include the CSS file with e.g., `<link href="public/css/impromptu.css" rel="stylesheet">`.
+
 
 ```bash
 cp -r node_modules/impromptu-react-sidemenu/public/ .
