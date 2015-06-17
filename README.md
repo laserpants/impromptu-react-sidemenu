@@ -184,4 +184,4 @@ Impromptu React Side Menu is provided under the BSD License.
 
 #### Font Awesome
 
-Distributed with the Font Awesome library. [Font Awesome](http://fontawesome.io/) is created and maintained by Dave Gandy. Fonts licensed under SIL OFL 1.1. Code licensed under MIT License.
+Distributed with the Font Awesome library included. [Font Awesome](http://fontawesome.io/) is created and maintained by Dave Gandy. Fonts licensed under SIL OFL 1.1. Code licensed under MIT License.
