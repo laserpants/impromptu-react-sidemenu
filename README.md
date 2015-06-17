@@ -23,7 +23,7 @@ Include the CSS file with e.g., `<link href="public/css/impromptu.css" rel="styl
 
 ## How to use
 
-A menu is created according to the following structure.
+A menu is layed out according to the following structure.
 
 ```jsx
 <Menu position='right'>
