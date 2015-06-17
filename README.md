@@ -14,7 +14,7 @@ Npm is the recommended install method.
 
 After installing, copy the public assets to your project folder.
 
-    cp -r node_modules/impromptu-react-sidemenu/public/ .                                                             
+    cp -r node_modules/impromptu-react-sidemenu/public/ .
 
 A mimimal
 
