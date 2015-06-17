@@ -116,7 +116,7 @@ var MenuComponent = React.createClass({
 });
 ```
 
-You may also want to have a look at the [included example](http://johanneshilden.github.io/impromptu-react-sidemenu) for some differnt configuration options.
+You may also want to have a look at the [included example](https://github.com/johanneshilden/impromptu-react-sidemenu/blob/master/js/main.js) for some different configuration options.
 
 ### HTML
 
