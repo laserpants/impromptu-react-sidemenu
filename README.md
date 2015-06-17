@@ -124,11 +124,9 @@ A bare minimum HTML host template could look like the one below.
 | `position`      | 'left'&nbsp;&vert;&nbsp;'right'         | Position of the menu.     | 'right'            |
 | `showDividers`  | Boolean                  | When true, this setting enables a visible line between menu items.     | false    |
 
-
-<i style="font-size:3.2em; float:right;" class="ion-social-sass"></i>
 ## CSS
 
-### Customization
+### Sass customization
 
 ```css
 /* Open button color values */
