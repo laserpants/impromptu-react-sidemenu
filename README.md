@@ -10,11 +10,11 @@ A side menu component for React.
 
 Npm is the recommended install method.
 
-> npm install impromptu-react-sidemenu
+    npm install impromptu-react-sidemenu
 
 After installing, copy the public assets to your project folder.
 
-> cp -r node_modules/impromptu-react-sidemenu/public/ .                                                             
+    cp -r node_modules/impromptu-react-sidemenu/public/ .                                                             
 
 A mimimal
 
