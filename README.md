@@ -14,13 +14,15 @@ Npm is the recommended install method.
 npm install impromptu-react-sidemenu
 ```
 
-After installing, copy the public assets to your project folder.
+After installing, copy the public assets to your project folder to get access to the required stylesheets and fonts.
 
 ```bash
 cp -r node_modules/impromptu-react-sidemenu/public/ .
 ```
 
 ## How to use
+
+We could create a component in a file `main.js`.
 
 ```jsx
 var React = require('react');
@@ -66,9 +68,13 @@ React.render(
 );
 ```
 
+Then build the component. In this example, Browserify is used.
+
 ```bash
 browserify -t reactify main.js -o bundle.js
 ```
+
+In some cases, you may want to use ordinary hyperlinks inside the menu `Item`s and `Brand` element instead of an `onClick` handler.
 
 ```jsx
 var MenuComponent = React.createClass({
@@ -93,6 +99,8 @@ var MenuComponent = React.createClass({
 });
 ```
 
+You may also want to have a look at the [included example](http://johanneshilden.github.io/impromptu-react-sidemenu) for some differnt configuration options.
+
 ### HTML
 
 A bare minimum HTML host template could look like the one below.
@@ -105,7 +113,6 @@ A bare minimum HTML host template could look like the one below.
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Impromptu React Side Menu</title>
-    <link href="//cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
     <link href="public/css/impromptu.css" rel="stylesheet">
 </head>
 <body>
@@ -127,6 +134,8 @@ A bare minimum HTML host template could look like the one below.
 ## CSS
 
 ### Sass customization
+
+To change menu colors, a number of Sass variables are provided in `sass/impromptu.scss`. You'll have to adjust these and recompile the CSS file. See http://sass-lang.com/ if you're unfamiliar with Sass.
 
 ```css
 /* Open button color values */
