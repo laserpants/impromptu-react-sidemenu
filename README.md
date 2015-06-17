@@ -14,6 +14,11 @@ Npm is the recommended install method.
 npm install impromptu-react-sidemenu
 ```
 
+After installing, copy the public assets to your project folder.
+
+```
+cp -r node_modules/impromptu-react-sidemenu/public/ .                                                                 ```                                   
+
 ## How to use
 
 ```
