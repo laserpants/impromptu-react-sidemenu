@@ -24,18 +24,20 @@ cp -r node_modules/impromptu-react-sidemenu/public/ .
 
 A menu is created according to the following structure.
 
-    <Menu position='right'>
-        <Brand>Title</Brand>
-        <Item onClick={...}>
-           A menu item
-        </Item>
-        <Item onClick={...}>
-           Another menu item
-        </Item>
-        <Item onClick={...}>
-           Yet another menu item
-        </Item>
-    </Menu>
+```jsx
+<Menu position='right'>
+    <Brand>Title</Brand>
+    <Item onClick={...}>
+       A menu item
+    </Item>
+    <Item onClick={...}>
+       Another menu item
+    </Item>
+    <Item onClick={...}>
+       Yet another menu item
+    </Item>
+</Menu>
+```
 
 As an example, we could create a component in a file `main.js`.
 
