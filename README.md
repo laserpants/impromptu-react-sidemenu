@@ -153,7 +153,7 @@ A bare minimum HTML host template could look like the one below.
 
 ### Sass customization
 
-To change menu colors, a number of Sass variables are provided in `sass/impromptu.scss`. You'll have to adjust these and recompile the CSS file. See [sass-lang.com](http://sass-lang.com/) if you're not familiar with Sass.
+To change menu colors, a number of Sass variables are set up in `sass/impromptu.scss`. You'll have to adjust these and recompile the CSS file. See [sass-lang.com](http://sass-lang.com/) if you're not familiar with Sass.
 
 ```css
 /* Open button color values */
