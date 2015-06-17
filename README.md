@@ -22,7 +22,22 @@ cp -r node_modules/impromptu-react-sidemenu/public/ .
 
 ## How to use
 
-We could create a component in a file `main.js`.
+A menu is created according to the following structure.
+
+    <Menu position='right'>
+        <Brand>Title</Brand>
+        <Item onClick={...}>
+           A menu item
+        </Item>
+        <Item onClick={...}>
+           Another menu item
+        </Item>
+        <Item onClick={...}>
+           Yet another menu item
+        </Item>
+    </Menu>
+
+As an example, we could create a component in a file `main.js`.
 
 ```jsx
 var React = require('react');
@@ -74,7 +89,7 @@ Then build the component. In this example, Browserify is used.
 browserify -t reactify main.js -o bundle.js
 ```
 
-In some cases, you may want to use ordinary hyperlinks inside the menu `Item`s and `Brand` element instead of an `onClick` handler.
+In some cases, you may want to use ordinary hyperlinks inside the menu `Item`s and `Brand` element instead of the `onClick` handler.
 
 ```jsx
 var MenuComponent = React.createClass({
@@ -135,7 +150,7 @@ A bare minimum HTML host template could look like the one below.
 
 ### Sass customization
 
-To change menu colors, a number of Sass variables are provided in `sass/impromptu.scss`. You'll have to adjust these and recompile the CSS file. See http://sass-lang.com/ if you're unfamiliar with Sass.
+To change menu colors, a number of Sass variables are provided in `sass/impromptu.scss`. You'll have to adjust these and recompile the CSS file. See [http://sass-lang.com/](http://sass-lang.com/) if you're not familiar with Sass.
 
 ```css
 /* Open button color values */
