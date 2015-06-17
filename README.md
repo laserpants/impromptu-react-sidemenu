@@ -85,7 +85,7 @@ React.render(
 );
 ```
 
-Then build the component. In this example, Browserify is used.
+Then build the component. In this example, [Browserify](http://browserify.org/) is used.
 
 ```bash
 browserify -t reactify main.js -o bundle.js
