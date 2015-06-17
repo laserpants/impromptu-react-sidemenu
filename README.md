@@ -18,7 +18,7 @@ After installing, copy the public assets to your project folder.
 
 A bare minimum HTML host template could look like the one below.
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,7 +38,7 @@ A bare minimum HTML host template could look like the one below.
 
 ## How to use
 
-```
+```jsx
 var React = require('react');
 var Menu  = require('impromptu-react-sidemenu').Menu;
 var Brand = require('impromptu-react-sidemenu').Brand;
@@ -82,11 +82,11 @@ React.render(
 );
 ```
 
-```
+```bash
 browserify -t reactify main.js -o bundle.js
 ```
 
-```
+```jsx
 var MenuComponent = React.createClass({
     render: function() {
         return (
@@ -126,7 +126,7 @@ var MenuComponent = React.createClass({
 
 ### Customization
 
-```
+```css
 /* Open button color values */
 $button-open-bg           : rgba(0, 0, 0, 0.4);
 $button-open-bg-active    : rgba(0, 0, 0, 0.7);
