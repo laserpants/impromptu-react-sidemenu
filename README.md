@@ -10,30 +10,14 @@ A side menu component for React.
 
 Npm is the recommended install method.
 
-    npm install impromptu-react-sidemenu
+```bash
+npm install impromptu-react-sidemenu
+```
 
 After installing, copy the public assets to your project folder.
 
-    cp -r node_modules/impromptu-react-sidemenu/public/ .
-
-A bare minimum HTML host template could look like the one below.
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Impromptu React Side Menu</title>
-    <link href="//cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
-    <link href="public/css/impromptu.css" rel="stylesheet">
-</head>
-<body>
-    <div class="impromptu-font-sans" id="anchor"></div>
-    <script src="bundle.js"></script>
-</body>
-</html>
+```bash
+cp -r node_modules/impromptu-react-sidemenu/public/ .
 ```
 
 ## How to use
@@ -58,26 +42,26 @@ var MenuComponent = React.createClass({
     },
     render: function() {
         return (
-            &lt;Menu&gt;
-                &lt;Brand onClick={this.handleClick.bind(null, 0)}&gt;
+            <Menu>
+                <Brand onClick={this.handleClick.bind(null, 0)}>
                     My menu is grandiose
-                &lt;/Brand&gt;
-                &lt;Item onClick={this.handleClick.bind(null, 1)}&gt;
+                </Brand>
+                <Item onClick={this.handleClick.bind(null, 1)}>
                     Item #1
-                &lt;/Item&gt;
-                &lt;Item onClick={this.handleClick.bind(null, 2)}&gt;
+                </Item>
+                <Item onClick={this.handleClick.bind(null, 2)}>
                     Item #2
-                &lt;/Item&gt;
-                &lt;Item onClick={this.handleClick.bind(null, 3)}&gt;
+                </Item>
+                <Item onClick={this.handleClick.bind(null, 3)}>
                     Item #3
-                &lt;/Item&gt;
-            &lt;/Menu&gt;
+                </Item>
+            </Menu>
         );
     }
 });
 
 React.render(
-    &lt;MenuComponent /&gt;,
+    <MenuComponent />,
     document.getElementById('anchor')
 );
 ```
@@ -90,26 +74,46 @@ browserify -t reactify main.js -o bundle.js
 var MenuComponent = React.createClass({
     render: function() {
         return (
-            &lt;Menu&gt;
-                &lt;Brand&gt;
-                    &lt;a href="#item-1"&gt;My menu is grandiose&lt;/a&gt;
-                &lt;/Brand&gt;
-                &lt;Item&gt;
-                    &lt;a href="#item-1"&gt;Item #1&lt;/a&gt;
-                &lt;/Item&gt;
-                &lt;Item&gt;
-                    &lt;a href="#item-2"&gt;Item #2&lt;/a&gt;
-                &lt;/Item&gt;
-                &lt;Item&gt;
-                    &lt;a href="#item-3"&gt;Item #3&lt;/a&gt;
-                &lt;/Item&gt;
-            &lt;/Menu&gt;
+            <Menu>
+                <Brand>
+                    <a href="#item-1">My menu is grandiose</a>
+                </Brand>
+                <Item>
+                    <a href="#item-1">Item #1</a>
+                </Item>
+                <Item>
+                    <a href="#item-2">Item #2</a>
+                </Item>
+                <Item>
+                    <a href="#item-3">Item #3</a>
+                </Item>
+            </Menu>
         );
     }
 });
 ```
 
 ### HTML
+
+A bare minimum HTML host template could look like the one below.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Impromptu React Side Menu</title>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
+    <link href="public/css/impromptu.css" rel="stylesheet">
+</head>
+<body>
+    <div class="impromptu-font-sans" id="anchor"></div>
+    <script src="bundle.js"></script>
+</body>
+</html>
+```
 
 ## Props
 
