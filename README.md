@@ -11,13 +11,13 @@ A side menu component for React.
 Npm is the recommended install method.
 
 ```bash
-npm install impromptu-react-sidemenu
+$ npm install impromptu-react-sidemenu
 ```
 
 After installing, copy the public assets to your project folder to get access to the required stylesheets and fonts. 
 
 ```bash
-cp -r node_modules/impromptu-react-sidemenu/public/ .
+$ cp -r node_modules/impromptu-react-sidemenu/public/ .
 ```
 Include the CSS file with e.g., `<link href="public/css/impromptu.css" rel="stylesheet">`.
 
@@ -89,7 +89,7 @@ React.render(
 Then build the component. In this example, [Browserify](http://browserify.org/) is used.
 
 ```bash
-browserify -t reactify main.js -o bundle.js
+$ browserify -t reactify main.js -o bundle.js
 ```
 
 In some cases, you may want to use ordinary hyperlinks inside the menu `Item`s and `Brand` element instead of the `onClick` handler.
