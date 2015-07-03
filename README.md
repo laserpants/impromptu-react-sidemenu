@@ -4,7 +4,7 @@ A side menu component for React.
 
 ### What does it look like?
 
-![animation][animation.gif]
+![animation](animation.gif)
 
 [Here](http://johanneshilden.github.io/impromptu-react-sidemenu) is an example. 
 
