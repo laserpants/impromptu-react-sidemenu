@@ -6,7 +6,7 @@ A side menu component for React.
 
 ![animation](animation2.gif)
 
-[Here](http://johanneshilden.github.io/impromptu-react-sidemenu) is an example. 
+[Here](http://laserpants.github.io/impromptu-react-sidemenu) is an example. 
 
 ## Installation
 
@@ -119,7 +119,7 @@ var MenuComponent = React.createClass({
 });
 ```
 
-You may also want to have a look at the [included example](https://github.com/johanneshilden/impromptu-react-sidemenu/blob/master/js/main.js) for some different configuration options.
+You may also want to have a look at the [included example](https://github.com/laserpants/impromptu-react-sidemenu/blob/master/js/main.js) for some different configuration options.
 
 ### HTML
 
